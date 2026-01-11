@@ -31,8 +31,8 @@
         <header>Login</header>
         <form action="{{Route("loginCheck")}}" method="post">
             @csrf
-          <input type="text" id="username" name="username" placeholder="Username" value="{{old("username")}}" required/>
-          <span class="lformError">@error('username'){{$message}} @enderror
+          <input type="text" id="email" name="email" placeholder="Email" value="{{old("email")}}" required/>
+          <span class="lformError">@error('email'){{$message}} @enderror
           </span>
           <input type="password" id="password" name="password" placeholder="Password" required />
           <span class="lformError">@error('password'){{$message}} @enderror
